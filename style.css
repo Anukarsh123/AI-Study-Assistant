@@ -1,94 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
 }
 
-.container{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-
-.login-card{
+.card,
+.dashboard{
+    background:white;
+    padding:30px;
+    border-radius:15px;
     width:400px;
-    padding:40px;
-    border-radius:20px;
-    background:rgba(255,255,255,0.1);
-    backdrop-filter:blur(15px);
-    border:1px solid rgba(255,255,255,0.2);
-    box-shadow:0 8px 32px rgba(0,0,0,0.3);
 }
 
-.login-card h1{
-    color:white;
-    text-align:center;
-    margin-bottom:10px;
-}
-
-.login-card p{
-    text-align:center;
-    color:#cbd5e1;
-    margin-bottom:25px;
+h1{
+    margin-bottom:20px;
 }
 
 input{
     width:100%;
-    padding:14px;
-    margin-bottom:15px;
-    border:none;
-    border-radius:10px;
-    background:rgba(255,255,255,0.15);
-    color:white;
-    font-size:15px;
-    outline:none;
-}
-
-input::placeholder{
-    color:#cbd5e1;
+    padding:12px;
+    margin:10px 0;
 }
 
 button{
     width:100%;
-    padding:14px;
-    border:none;
-    border-radius:10px;
-    font-size:16px;
-    font-weight:600;
+    padding:12px;
+    margin-top:10px;
     cursor:pointer;
-    background:white;
-    transition:0.3s;
 }
 
-button:hover{
-    transform:translateY(-2px);
-}
-
-.links{
-    display:flex;
-    justify-content:space-between;
-    margin-top:15px;
-}
-
-.links a{
-    color:#e2e8f0;
+a{
     text-decoration:none;
-    font-size:14px;
-}
-
-.links a:hover{
-    text-decoration:underline;
 }
